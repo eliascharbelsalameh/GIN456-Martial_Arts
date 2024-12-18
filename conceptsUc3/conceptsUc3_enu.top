@@ -1,0 +1,28 @@
+topic: ~conceptsUc3()
+language: enu
+
+# Basic responses
+concept:(yes) [yes yeah sure okay alright "lets go" "go ahead" "I want to" absolutely]
+concept:(no) [no nah nope "not now" "maybe later" "I dont want to"]
+concept:(next) [next continue "go on" proceed "tell me more" "what next" "and then"]
+concept:(dontknow) ["I dont know" "not sure" "no idea" uncertain "you tell me"]
+concept:(interest) [interesting fascinating amazing wow "tell me more" "so cool"]
+concept:(disinterest) ["too long" boring "not interesting" "skip this" "move on"]
+
+# Speech styles and pauses
+concept:(speak_slow) \RSPD=85\
+concept:(speak_normal) \RSPD=100\
+concept:(long_pause) \pau=1000\
+concept:(short_pause) \pau=400\
+concept:(medium_pause) \pau=700\
+
+# Story transitions
+concept:(storytelling) [
+    ^rand["let me tell you about" "I will share with you" "allow me to explain about"]
+    ~long_pause
+]
+
+concept:(excitement) [
+    ^rand["this is fascinating" "here is something amazing" "you will love this part"]
+    ~short_pause
+]

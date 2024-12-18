@@ -1,0 +1,13 @@
+topic: ~HistoryInterest()
+language: enu
+
+include:Concepts_enu.top
+
+u:(e:onStart) ^goto(historyQuestion)
+
+proposal: %historyQuestion one thing remains $name \pau=1000\ Would you like to receive some historical context regarding Karate
+    u1:(~yes) Splendid! \pau=1000\ Let us proceed $onStopped=1
+    
+    u1:(~no) I see \pau=1000\ in that case, let us begin the training session directly. $onStopped=0
+ 
+  
